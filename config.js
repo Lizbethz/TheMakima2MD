@@ -11,7 +11,7 @@ global.botnumber = ""
 global.confirmCode = ""
 
 global.owner = [
-  ['5215641961070', '👑 Mystic - Creador 👑', true],
+  ['5212212011987', '👑 Mystic - Creador 👑', true],
   ['5219531627349', '💫 Sosa - Collaborator 2 💫', true],
   ['5219531316285', '💫 Mary - Collaborator 3 💫', true],
   ['5219992095479', '💫 Mystic - Collaborator 4 💫', true],
