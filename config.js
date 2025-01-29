@@ -15,6 +15,10 @@ global.owner = [
   ['5219531627349', '💫 Sosa - Collaborator 2 💫', true],
   ['5219531316285', '💫 Mary - Collaborator 3 💫', true],
   ['5219992095479', '💫 Mystic - Collaborator 4 💫', true],
+  ['5219666666666', '💫 Mystic - Collaborator 2 💫', true],
+  ['5216646666666', '💫 Mystic - Collaborator 3 💫', true],
+  ['5217621207808', '💫 Mystic - Collaborator 4 💫', true],
+  ['5217621792917', '💫 Mystic - Collaborator 5 💫', true],
 ];
 
 global.suittag = ['5219993404349'];
