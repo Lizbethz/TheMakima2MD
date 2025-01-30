@@ -31,6 +31,8 @@ global.titulowm = 'The Mystic - Bot';
 global.titulowm2 = `The Mystic - Bot`
 global.igfg = 'The Mystic - Bot';
 global.wait = '*_[ ⏳ ] Cargando..._*';
+global.resp = '𝐀𝐪𝐮𝐢 𝐓𝐢𝐞𝐧𝐞 𝐒𝐮 𝐏𝐞𝐝𝐢𝐝𝐨 〜(^∇^〜)'
+global.espera = '✰ 𝐄𝐬𝐩𝐞𝐫𝐚 𝐔𝐧 𝐌𝐨𝐦𝐞𝐧𝐭𝐨, 𝐄𝐬𝐭𝐚𝐦𝐨𝐬 𝐄𝐧𝐯𝐢𝐚𝐧𝐝𝐨 𝐒𝐮 𝐏𝐞𝐝𝐢𝐝𝐨 (✿◠‿◠)'
 
 global.imagen1 = fs.readFileSync('./Menu2.jpg');
 global.imagen2 = fs.readFileSync('./src/nuevobot.jpg');
