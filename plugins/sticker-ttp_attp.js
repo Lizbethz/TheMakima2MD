@@ -1,33 +1,64 @@
-let handler = async(m, { conn, text, args, usedPrefix, command }) => {
-if (!text) throw `*[❗] 𝙸𝙽𝙶𝚁𝙴𝚂𝙴 𝚄𝙽 𝚃𝙴𝚇𝚃𝙾*\n\n*—◉ 𝙴𝙹𝙴𝙼𝙿𝙻𝙾:*\n*◉ ${usedPrefix + command} *Hades-bot*`
-let teks = encodeURI(text)
+import fetch from "node-fetch";
+let Sticker;
+import("wa-sticker-formatter")
+  .then((module) => {
+    Sticker = module.Sticker;
+  })
+  .catch((error) => {
+    console.error("wa-sticker-formatter");
+  });
 
-if (command == 'attp') {
-let teksb = text ? text : m.quoted && m.quoted.text ? m.quoted.text : m.text
-conn.sendFile(m.chat, global.API('xteam', '/attp', { file: '', text: teksb }), 'sticker.webp', '', m, false, { asSticker: true })}
+const handler = async (m, { conn, text, args, usedPrefix, command }) => {
+  const datas = global;
+  const idioma = datas.db.data.users[m.sender].language || global.defaultLenguaje;
+  const _translate = JSON.parse(
+    fs.readFileSync(`./src/languages/${idioma}.json`),
+  );
+  const tradutor = _translate.plugins.sticker_ttp_attp;
+  if (!text) throw `${tradutor.texto1} ${usedPrefix + command} Mystic-Bot*`;
+  if (command == "attp") {
+    const a1 = await (
+      await fetch(
+        `https://api.erdwpe.com/api/maker/attp?text=${teks=${decodeURI(text)}`,
+      )
+    ).buffer();
+    const a2 = await createSticker(a1, false, global.packname, global.author);
+    conn.sendFile(m.chat, a2, "sticker.webp", "", m, { asSticker: true });
+  }
+  if (command == "ttp2") {
+    const ttppredd = `${global.BASE_API_DELIRIUS}/canvas/ttp?text=${encodeURI(text)}&color=red`;
+    const stiker = await createSticker(
+      ttppredd,
+      false,
+      global.packname,
+      global.author,
+      20,
+    );
+    m.reply(stiker);
+  }
 
-if (command == 'attp2') {
-conn.sendFile(m.chat, `https://api.lolhuman.xyz/api/attp?apikey=${lolkeysapi}&text=${teks}`, 'sticker.webp', '', m, { asSticker: true })}
-    
-if (command == 'attp3') {
-conn.sendFile(m.chat, `https://api.lolhuman.xyz/api/attp2?apikey=${lolkeysapi}&text=${teks}`, 'sticker.webp', '', m, { asSticker: true })}
+  if (command == "ttp") {
+    const tctctctc = `${global.BASE_API_DELIRIUS}/canvas/ttp?text=${encodeURI(text)}`;
+    const stiker = await createSticker(
+      tctctctc,
+      false,
+      global.packname,
+      global.author,
+      20,
+    );
+    m.reply(stiker);
+  }
+};
+handler.command = handler.help = ["ttp", "ttp2", "attp"];
+handler.tags = ["sticker"];
+export default handler;
 
-if (command == 'ttp5') {
-conn.sendFile(m.chat, `https://api.lolhuman.xyz/api/ttp6?apikey=${lolkeysapi}&text=${teks}`, 'sticker.webp', '', m, { asSticker: true })}
-    
-if (command == 'ttp4') {
-conn.sendFile(m.chat, `https://api.lolhuman.xyz/api/ttp5?apikey=${lolkeysapi}&text=${teks}`, 'sticker.webp', '', m, { asSticker: true })}
-    
-if (command == 'ttp3') {
-conn.sendFile(m.chat, `https://api.lolhuman.xyz/api/ttp3?apikey=${lolkeysapi}&text=${teks}`, 'sticker.webp', '', m, { asSticker: true })}
-    
-if (command == 'ttp2') {
-conn.sendFile(m.chat, `https://api.lolhuman.xyz/api/ttp2?apikey=${lolkeysapi}&text=${teks}`, 'sticker.webp', '', m, { asSticker: true })}
-    
-if (command == 'ttp') {
-conn.sendFile(m.chat, `https://api.lolhuman.xyz/api/ttp?apikey=${lolkeysapi}&text=${teks}`, 'sticker.webp', '', m, { asSticker: true })}
-    
+async function createSticker(img, url, packName, authorName, quality) {
+  const stickerMetadata = {
+    type: "full",
+    pack: packName,
+    author: authorName,
+    quality,
+  };
+  return new Sticker(img ? img : url, stickerMetadata).toBuffer();
 }
-handler.command = handler.help = ['ttp', 'ttp2', 'ttp3', 'ttp4', 'ttp5', 'attp', 'attp2', 'attp3']
-handler.tags = ['sticker']
-export default handler
