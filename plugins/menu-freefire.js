@@ -8,7 +8,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
   const tradutor = _translate.plugins.menu_anime
 
   try {
-    const pp = imagen2;
+    const pp = imagen11;
     // let vn = './media/menu.mp3'
     const d = new Date(new Date + 3600000);
     const locale = 'es';
@@ -25,56 +25,28 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     const taguser = '@' + m.sender.split('@s.whatsapp.net')[0];
     const doc = ['pdf', 'zip', 'vnd.openxmlformats-officedocument.presentationml.presentation', 'vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'vnd.openxmlformats-officedocument.wordprocessingml.document'];
     const document = doc[Math.floor(Math.random() * doc.length)];
-    const str = `╭═══〘 ✯✯✯✯✯✯✯✯✯ 〙══╮
-║    ◉— *𝗞𝗜𝗟𝗟𝗭𝗡 𝗦𝗧𝗢𝗥𝗘𝐭* —◉
-║≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡║
-║➤ ${tradutor.texto1[1]}, ${taguser}*
-╰═══╡✯✯✯✯✯✯✯✯✯╞═══╯
+	const str = `👑 𝗠𝗘𝗡𝗨 𝗙𝗥𝗘𝗘 𝗙𝗜𝗥𝗘 👑. 
 
-┏━━━━━━━━━━━━━━━━┓
-┃ *< ${tradutor.texto1[0]} />*
-┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┣ ඬ⃟ 🧿 _${usedPrefix}lolivid_
-┣ ඬ⃟ 🧿 _${usedPrefix}loli_
-┣ ඬ⃟ 🧿 _${usedPrefix}ppcouple_
-┣ ඬ⃟ 🧿 _${usedPrefix}neko_
-┣ ඬ⃟ 🧿 _${usedPrefix}waifu_
-┣ ඬ⃟ 🧿 _${usedPrefix}akira_
-┣ ඬ⃟ 🧿 _${usedPrefix}akiyama_
-┣ ඬ⃟ 🧿 _${usedPrefix}anna_
-┣ ඬ⃟ 🧿 _${usedPrefix}asuna_
-┣ ඬ⃟ 🧿 _${usedPrefix}ayuzawa_
-┣ ඬ⃟ 🧿 _${usedPrefix}boruto_
-┣ ඬ⃟ 🧿 _${usedPrefix}chiho_
-┣ ඬ⃟ 🧿 _${usedPrefix}chitoge_
-┣ ඬ⃟ 🧿 _${usedPrefix}deidara_
-┣ ඬ⃟ 🧿 _${usedPrefix}erza_
-┣ ඬ⃟ 🧿 _${usedPrefix}elaina_
-┣ ඬ⃟ 🧿 _${usedPrefix}eba_
-┣ ඬ⃟ 🧿 _${usedPrefix}emilia_
-┣ ඬ⃟ 🧿 _${usedPrefix}hestia_
-┣ ඬ⃟ 🧿 _${usedPrefix}hinata_
-┣ ඬ⃟ 🧿 _${usedPrefix}inori_
-┣ ඬ⃟ 🧿 _${usedPrefix}isuzu_
-┣ ඬ⃟ 🧿 _${usedPrefix}itachi_
-┣ ඬ⃟ 🧿 _${usedPrefix}itori_
-┣ ඬ⃟ 🧿 _${usedPrefix}kaga_
-┣ ඬ⃟ 🧿 _${usedPrefix}kagura_
-┣ ඬ⃟ 🧿 _${usedPrefix}kaori_
-┣ ඬ⃟ 🧿 _${usedPrefix}keneki_
-┣ ඬ⃟ 🧿 _${usedPrefix}kotori_
-┣ ඬ⃟ 🧿 _${usedPrefix}kurumi_
-┣ ඬ⃟ 🧿 _${usedPrefix}madara_
-┣ ඬ⃟ 🧿 _${usedPrefix}mikasa_
-┣ ඬ⃟ 🧿 _${usedPrefix}miku_
-┣ ඬ⃟ 🧿 _${usedPrefix}minato_
-┣ ඬ⃟ 🧿 _${usedPrefix}naruto_
-┣ ඬ⃟ 🧿 _${usedPrefix}nezuko_
-┣ ඬ⃟ 🧿 _${usedPrefix}sagiri_
-┣ ඬ⃟ 🧿 _${usedPrefix}sasuke_
-┣ ඬ⃟ 🧿 _${usedPrefix}sakura_
-┣ ඬ⃟ 🧿 _${usedPrefix}cosplay_
-┗━━━━━━━━━━━━━━━━┛`.trim();
+
+⇝ 👑 𝗟𝗜𝗦𝗧𝗔𝗦 𝗗𝗘 𝗩𝗘𝗥𝗦𝗨𝗦 👑 ⇜
+
+*𝘚𝘐𝘎𝘕𝘐𝘍𝘐𝘊𝘈𝘋𝘖𝘚: 𝘏𝘏:𝘔𝘔 (𝘏𝘖𝘙𝘈:𝘔𝘐𝘕𝘜𝘛𝘖𝘚)*
+*𝘊𝘗 (𝘊𝘖𝘋𝘐𝘎𝘖 𝘋𝘌 𝘗𝘈𝘐𝘚) 𝘗𝘈𝘙𝘈 𝘓𝘈 𝘏𝘖𝘙𝘈 (𝘔𝘟, 𝘊𝘖, 𝘊𝘓 𝘠 𝘈𝘙)*
+*𝘊𝘙 (𝘊𝘖𝘓𝘖𝘙 𝘋𝘌 𝘙𝘖𝘗𝘈)*
+*𝘌𝘫𝘦𝘮𝘱𝘭𝘰: .4𝘷𝘴4 22:30 𝘔𝘟*
+*𝘌𝘫𝘦𝘮𝘱𝘭𝘰: .8𝘷𝘴8 22:50 𝘕𝘌𝘎𝘙𝘖*
+
+*⚔ ➺.4𝘷𝘴4 𝘏𝘏:𝘔𝘔 𝘊𝘗*
+*⚔ ➺.6𝘷𝘴6 𝘏𝘏:𝘔𝘔 𝘊𝘗*
+*⚔ ➺.8𝘷𝘴8 𝘏𝘏:𝘔𝘔 𝘊𝘙*
+*⚔ ➺.𝘴𝘤𝘳𝘪𝘮 𝘏𝘏:𝘔𝘔 𝘊𝘗*
+*⚔ ➺.𝘪𝘯𝘵𝘦𝘳𝘯𝘢4 𝘏𝘏:𝘔𝘔 𝘊𝘗*
+*⚔ ➺.12𝘷𝘴12 𝘏𝘏:𝘔𝘔 𝘊𝘙*
+*⚔ ➺.16𝘷𝘴16 𝘏𝘏:𝘔𝘔 𝘊𝘙*
+*⚔ ➺.20𝘷𝘴20 𝘏𝘏:𝘔𝘔 𝘊𝘙*
+*⚔ ➺.24𝘷𝘴24 𝘏𝘏:𝘔𝘔 𝘊𝘙*
+*⚔ ➺.𝘊𝘶𝘢𝘥𝘳𝘪𝘭𝘢𝘵𝘦𝘳𝘰 𝘏𝘏:𝘔𝘔 𝘊𝘙*
+`.trim();
     if (m.isGroup) {
       // await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
       const fkontak2 = {'key': {'participants': '0@s.whatsapp.net', 'remoteJid': 'status@broadcast', 'fromMe': false, 'id': 'Halo'}, 'message': {'contactMessage': {'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`}}, 'participant': '0@s.whatsapp.net'};
@@ -88,7 +60,7 @@ const handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, is
     conn.reply(m.chat, tradutor.texto1[3], m);
   }
 };
-handler.command = /^(animes|menuanimes)$/i;
+handler.command = /^(menuff|menufreefire|menufrefire)$/i;
 handler.exp = 50;
 handler.fail = null;
 export default handler;
