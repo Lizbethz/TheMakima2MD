@@ -1,4 +1,4 @@
-{
+no{
   "name": "TheMystic-Bot-MD",
   "version": "1.0.0",
   "description": "Subs. al canal de YT The Shadow Borkers - TEAM",
@@ -96,7 +96,7 @@
     "syntax-error": "^1.4.0",
     "terminal-image": "^2.0.0",
     "url-regex-safe": "^3.0.0",
-    "wa-sticker-formatter": "^4.3.2",
+    "wa-sticker-formatter": "^4.4.4",
     "yargs": "^17.3.1",
     "yt-search": "^2.10.3",
     "ytdl-core": "github:khlevon/node-ytdl-core#v4.11.4-patch.2"
