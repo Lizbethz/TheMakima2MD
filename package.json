@@ -1,4 +1,4 @@
-no{
+{
   "name": "TheMystic-Bot-MD",
   "version": "1.0.0",
   "description": "Subs. al canal de YT The Shadow Borkers - TEAM",
@@ -41,6 +41,7 @@ no{
     "@vitalets/google-translate-api": "^8.0.0",
     "@whiskeysockets/baileys": "github:ds6/bails",
     "@xct007/frieren-scraper": "github:xct007/frieren-scraper",
+    "@SumiFX/Scraper": "github:BrunoSobrino/SumiFX-Scraper",
     "acrcloud": "^1.4.0",
     "ruhend-scraper": "^7.0.4",
     "api-dylux": "^1.6.2",
